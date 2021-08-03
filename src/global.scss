@@ -1,0 +1,93 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+  --ion-color-tertiary: #ee7879;
+  --ion-color-tertiary-rgb: 238,120,121;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0,0,0;
+  --ion-color-tertiary-shade: #d16a6a;
+  --ion-color-tertiary-tint: #f08686;
+
+  --ion-color-lima: #a5ff01;
+  --ion-color-lima-rgb: 165,255,1;
+  --ion-color-lima-contrast: #000000;
+  --ion-color-lima-contrast-rgb: 0,0,0;
+  --ion-color-lima-shade: #91e001;
+  --ion-color-lima-tint: #aeff1a;
+}
+
+.ion-color-lima {
+  --ion-color-base: var(--ion-color-lima);
+  --ion-color-base-rgb: var(--ion-color-lima-rgb);
+  --ion-color-contrast: var(--ion-color-lima-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-lima-contrast-rgb);
+  --ion-color-shade: var(--ion-color-lima-shade);
+  --ion-color-tint: var(--ion-color-lima-tint);
+}
+
+.h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+ion-card {
+  background: transparent;
+  box-shadow: none;
+}
+
+ion-card-subtitle {
+  font-size: 14px;
+  text-transform: initial;
+}
+
+.my-custom-class .action-sheet-group {
+    background-color: #b6c9bd;
+
+    .action-sheet-title {
+      font-size: 24px;
+    }
+
+  .action-sheet-button-inner {
+    justify-content: flex-start;
+  }
+
+}
+
+.my-custom-class {
+  --button-color: #e9319c;
+  --button-color-activated: #1dac30;
+
+.EditionIcon {
+  .action-sheet-button-inner {
+    color:chocolate;
+  }
+  ion-icon {
+    color: #91e001;
+  }
+}
+}

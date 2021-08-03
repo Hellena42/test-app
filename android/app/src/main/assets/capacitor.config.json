@@ -1,0 +1,6 @@
+{
+	"appId": "io.tApp",
+	"appName": "tApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

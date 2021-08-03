@@ -1,0 +1,36 @@
+.login {
+  ion-card {
+    margin-top: 120px;
+    text-align: center;
+  }
+
+  ion-card-header {
+    margin-bottom: 50px;
+  }
+
+  ion-item {
+    margin-bottom: 15px;
+    text-align: center;
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    --border-style: none;
+  }
+
+  ion-input {
+    --padding-start: 20px;
+    --padding-end: 20px;
+    border: 1px solid rgb(66, 233, 130);
+    border-radius: 20px;
+  }
+}
+
+.btn-login {
+  border-radius: 20px;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 30px;
+  width: 70%;
+  align-items: center;
+}

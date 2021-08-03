@@ -1,0 +1,48 @@
+<ion-header class="">
+  <ion-toolbar>
+    <ion-title class="h1">Bazinga!</ion-title>
+        <!-- Hamburger -->
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+      <ion-row class="ion-text-center">
+        <ion-col size="6">
+          <div class="home-item bg-color-green">
+            <a [routerLink]="['/items']">Items Local</a>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+         <div class="home-item bg-color-pink">
+          <a [routerLink]="['/items2']">Items Http</a>
+         </div>
+        </ion-col>
+      </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col class="ion-text-center">
+        <ion-button (click)="_openModal()" shape="round">Кнопка</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item color="tertiary">
+          <ion-text color="lima">
+            The quick brown fox jumps over the lazy dog
+          </ion-text>
+        </ion-item>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-button color="danger" (click)="openAction()" class="action">Action</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-checkbox color="lima" class="cbx"></ion-checkbox>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
