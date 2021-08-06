@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './shared/guards/auth.guard';
+import { AuthGuard } from './guards/auth-danger/auth.guard';
+import { AuthBlueGuard } from './guards/auth-blue/auth-blue.guard';
+import { AuthLimaGuard } from './guards/auth-lima/auth-lima.guard';
+
+
 
 const routes: Routes = [
   {
@@ -35,25 +39,16 @@ const routes: Routes = [
   {
     path: 'danger',
     canActivate: [AuthGuard],
-    data: {
-      name: 'danger'
-    },
     loadChildren: () => import('./pages/toggle/danger/danger.module').then( m => m.DangerPageModule)
   },
   {
-    path: 'lima',
-    canActivate: [AuthGuard],
-    data: {
-      name: 'lima'
-    },
+    path: 'lima', 
+    canActivate: [AuthLimaGuard],
     loadChildren: () => import('./pages/toggle/lima/lima.module').then( m => m.LimaPageModule)
   },
   {
-    path: 'blue',
-    canActivate: [AuthGuard],
-    data: {
-      name: 'blue'
-    },
+    path: 'blue', 
+    canActivate: [AuthBlueGuard],
     loadChildren: () => import('./pages/toggle/blue/blue.module').then( m => m.BluePageModule)
   },
   {path: '**', redirectTo: ''}
