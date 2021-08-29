@@ -8,13 +8,15 @@ import { ItemsPageRoutingModule } from './items-routing.module';
 
 import { ItemsPage } from './items.page';
 import { PopoverComponent } from 'src/app/components/popover/popover.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ItemsPageRoutingModule
+    ItemsPageRoutingModule,
+    TranslateModule
   ],
   declarations: [
     ItemsPage,

@@ -24,7 +24,6 @@ export class Item2Page implements OnInit {
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {
       this.getItem(+params.id);
-      console.log("rD: ", this.recievedData);
     });
   }
 

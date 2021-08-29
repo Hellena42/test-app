@@ -1,8 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>items</ion-title>
+    <ion-title>{{ 'itemsData.title' | translate}}</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
+      <ion-back-button defaultHref="home" text="{{ 'backBtn' | translate}}"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-menu-button autoHide="false"></ion-menu-button>
@@ -20,7 +20,7 @@
               <img [src]="i.imageUrl" alt="">
             </ion-avatar>
             <ion-label>
-              {{ i.title }}
+              {{ i.title | translate}}
             </ion-label>
           </ion-item>
         </ion-list>
@@ -28,7 +28,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button (click)="openPopover()">Popover</ion-button>
+        <ion-button (click)="openPopover()">{{ 'popover.btn' | translate}}</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

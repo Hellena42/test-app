@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { BluePageRoutingModule } from './blue-routing.module';
 
 import { BluePage } from './blue.page';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BluePageRoutingModule
+    BluePageRoutingModule,
+    TranslateModule
   ],
   declarations: [BluePage]
 })

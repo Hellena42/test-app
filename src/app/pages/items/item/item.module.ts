@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ItemPageRoutingModule } from './item-routing.module';
 
 import { ItemPage } from './item.page';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ItemPageRoutingModule
+    ItemPageRoutingModule,
+    TranslateModule
   ],
   declarations: [ItemPage]
 })

@@ -51,6 +51,10 @@ const routes: Routes = [
     canActivate: [AuthBlueGuard],
     loadChildren: () => import('./pages/toggle/blue/blue.module').then( m => m.BluePageModule)
   },
+  {
+    path: 'plugins',
+    loadChildren: () => import('./pages/plugins/plugins.module').then( m => m.PluginsPageModule)
+  },
   {path: '**', redirectTo: ''}
 ];
 

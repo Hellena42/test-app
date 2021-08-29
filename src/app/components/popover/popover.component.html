@@ -3,14 +3,14 @@
     <ion-row>
       <ion-col>
         <ion-list>
-          <ion-item>Item 1</ion-item>
-          <ion-item>Item 2</ion-item>
-          <ion-item>Item 3</ion-item>
+          <ion-item>{{ 'popover.items.0' | translate}}</ion-item>
+          <ion-item>{{ 'popover.items.1' | translate}}</ion-item>
+          <ion-item>{{ 'popover.items.2' | translate}}</ion-item>
         </ion-list>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-button (click)="closePopover()">Close</ion-button>
+      <ion-button (click)="closePopover()">{{ 'popover.close' | translate}}</ion-button>
     </ion-row>
   </ion-grid>
 </ion-content>

@@ -1,11 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{ receivedItem.title }}</ion-title>
+    <ion-title>{{ receivedItem.title | translate}}</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="items"></ion-back-button>
+      <ion-back-button defaultHref="items" text="{{ 'backBtn' | translate}}"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -19,19 +19,15 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <h2>{{ receivedItem.title }}</h2>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-title>
-          Что делать:
-        </ion-title>
+        <ion-text class="item-text">
+          {{ 'itemsData.solution'  | translate}}:
+        </ion-text>
         <ion-list *ngFor="let med of receivedItem.meds, index as i">
           <ion-item>
-            {{i + 1}}: {{ med }}
+            {{i + 1}}) {{ med | translate}}
           </ion-item>
         </ion-list>
+        <ion-button color="lima" (click)="onShare()">{{ 'itemsData.btn'  | translate}}</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

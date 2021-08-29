@@ -1,6 +1,6 @@
 <ion-header class="">
   <ion-toolbar>
-    <ion-title class="h1">Bazinga!</ion-title>
+    <ion-title class="h1">{{ 'home.title' | translate }}</ion-title>
         <!-- Hamburger -->
     <ion-buttons slot="start">
       <ion-menu-button autoHide="false"></ion-menu-button>
@@ -24,19 +24,19 @@
       </ion-row>
     <ion-row class="ion-justify-content-center">
       <ion-col class="ion-text-center">
-        <ion-button (click)="_openModal()" shape="round">Кнопка</ion-button>
+        <ion-button (click)="_openModal()" shape="round">{{ 'home.btn' | translate }}</ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="12">
         <ion-item color="tertiary">
           <ion-text color="lima">
-            The quick brown fox jumps over the lazy dog
+            {{ 'home.text' | translate }}
           </ion-text>
         </ion-item>
       </ion-col>
       <ion-col class="ion-text-center">
-        <ion-button color="danger" (click)="openAction()" class="action">Action</ion-button>
+        <ion-button color="danger" (click)="openAction()" class="action">{{ 'home.action' | translate }}</ion-button>
       </ion-col>
     </ion-row>
     <ion-row>

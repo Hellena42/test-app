@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { LimaPageRoutingModule } from './lima-routing.module';
 
 import { LimaPage } from './lima.page';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LimaPageRoutingModule
+    LimaPageRoutingModule,
+    TranslateModule
   ],
   declarations: [LimaPage]
 })

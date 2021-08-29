@@ -4,20 +4,37 @@
       <ion-header class="ion-text-start ion-no-border">
         <ion-toolbar >
           <ion-title>
-            Menu
+            {{ 'sidemenu.title' | translate }}
           </ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>
-        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-          <ion-item
-          routerDirection="root" [routerLink]="[p.url]" [class.active-menu]="active === p.url">
-            <ion-icon slot="start" [ios]="p.icon"></ion-icon>
-            <ion-label>
-              {{p.title}}
-            </ion-label>
+        <div *ngFor="let p of appPages; let i = index">          
+          <ion-menu-toggle auto-hide="false">
+            <ion-item
+            routerDirection="root" [routerLink]="[p.url]" [class.active-menu]="active === p.url">
+              <ion-icon slot="start" [ios]="p.icon"></ion-icon>
+              <ion-label>
+                {{ p.title | translate }}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </div>
+        <div *ngFor="let l of languages">
+          <ion-item button *ngIf="l.children?.length > 0" (click)="l.open = !l.open" [class.active-parent]="l.open" detail="false">
+            <ion-icon slot="start" name="arrow-forward" *ngIf="!l.open"></ion-icon>
+            <ion-icon slot="start" name="arrow-down" *ngIf="l.open"></ion-icon>
+            <ion-label>{{ l.title | translate}}</ion-label>
           </ion-item>
-        </ion-menu-toggle>
+          <ion-list *ngIf="l.open">
+            <ion-menu-toggle>
+              <ion-item *ngFor="let sub of l.children" routerDirection="root" >
+                <ion-icon slot="start" [ios]="sub.icon"></ion-icon>
+                <ion-label (click)='languageChange(sub.value)'>{{ sub.title }}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+        </div>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>

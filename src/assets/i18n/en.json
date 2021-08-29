@@ -1,0 +1,101 @@
+{
+  "signIn": {
+    "title": "Bazzzzzzzzzzzzinga",
+    "input": "Enter login",
+    "pass": "Enter password",
+    "btn": "Sign in"
+  },
+  "sidemenu": {
+    "home": "Home",
+    "about": "About",
+    "plugins": "Plugins",
+    "items": "Items",
+    "items2": "Items2",
+    "toggle": "Toggle",
+    "danger": "Danger",
+    "lima": "Lima",
+    "blue": "Blue",
+    "changeLang": "Сhange language"
+  },
+  "home": {
+    "title": "Home",
+    "btn": "Button",
+    "text": "The quick brown fox jumps over the lazy dog",
+    "action": "Click me"
+  },
+  "about": {
+    "title": "About us", 
+    "description": [
+      {
+        "paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "paragraph2": "Magni vitae nobis impedit, temporibus dignissimos nam et quibusdam minima blanditiis! Quam beatae recusandae eum deleniti. Est error expedita facere fugit id"
+      }
+    ],
+   "pictures": [
+    {"painter": "Leonid Afremov", "pictureName": "Walk under an umbrella"},
+    {"painter": "World of Warcraft", "pictureName": "Illidan Stormrage"},
+    {"painter": "Salvador Dali", "pictureName": "The Persistence of Memory"} ,
+    {"painter": "Alexander Jansson", "pictureName": "The Bridge"}
+    ]
+  },
+  "plugins": {
+    "title": "Plugins",
+    "btnCamera": "Make a Photo",
+    "status": [
+     {"text": "Connection status"},
+     {"online": "Online"},
+     {"offline": "Offline"}
+    ],
+    "openGoogle": "Google",
+    "longitude": "longitude",
+    "latitude": "latitude",
+    "locBtn": "My location?"
+  },
+  "itemsData": {
+   "title": "Posts",
+   "popover": "Pop-up",
+   "solution": "Solution",
+   "btn": "Share",
+   "item": [
+     {
+       "title": "Sufferer",
+       "meds": ["give food", "scratch behind the ear", "die together"]
+     },
+     {
+       "title": "Sommelier",
+       "meds": ["pour milk", "open more wine", "sit together"]
+     },
+     {
+       "title": "Not offended woman",
+       "meds": ["run away", "shoot oneself", "go to the sommelier"]
+     }
+   ]
+  },
+  "items2": {
+    "title": "Posts 2"
+  },
+  "toggles": {
+   "title": "Toggles",
+   "danger": "Danger" ,
+   "lima": "Lima",
+   "blue":"Blue"
+  },
+  "toggleItem": {
+    "danger": "Danger",
+    "dangerText": "Danger Danger Danger",
+    "lima":"Lima",
+    "limaText": "Lima lima lima",
+    "blue":"Blue",
+    "blueText": "Blue blue bblluee"
+  },
+  "modal": {
+    "title": "Modal",
+    "text": "Modal modal modal"
+  },
+  "popover": {
+    "btn": "Popover",
+    "items": ["cats", "foxes", "hedgehogs"],
+    "close": "Close"
+  },
+  "backBtn": "Back"
+}

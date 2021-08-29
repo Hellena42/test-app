@@ -8,13 +8,17 @@ import { DataToggleService } from 'src/app/shared/services/data-toggle.service';
 })
 export class TogglePage implements OnInit {
 
-  dangerToggle = false;
-  limaToggle = false;
-  blueToggle = false;
+  dangerToggle: boolean;
+  limaToggle: boolean;
+  blueToggle: boolean;
 
   constructor(
     public dataToggleService: DataToggleService
-    ) {}
+    ) {
+      this.dangerToggle = this.dataToggleService.dangerValue.getValue();
+      this.limaToggle = this.dataToggleService.limaValue.getValue();
+      this.blueToggle = this.dataToggleService.blueValue.getValue();
+    }
 
 
   ngOnInit() {

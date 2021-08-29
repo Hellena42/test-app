@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DangerPageRoutingModule } from './danger-routing.module';
 
 import { DangerPage } from './danger.page';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DangerPageRoutingModule
+    DangerPageRoutingModule,
+    TranslateModule
   ],
   declarations: [DangerPage]
 })

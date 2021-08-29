@@ -9,18 +9,19 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomePage } from './home.page';
 import { ModalService } from 'src/app/shared/services/modal.service';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
-import { PopoverComponent } from 'src/app/components/popover/popover.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    TranslateModule
   ],
   declarations: [
     HomePage,
-    ModalComponent
+    ModalComponent,
   ],
   providers: [ModalService]
 })
